@@ -1,0 +1,40 @@
+.pricing {
+    padding-bottom: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 366px);
+        grid-template-rows: repeat(3, 44px);
+        row-gap: 45px;
+        column-gap: 302px;
+        margin-top: 60px;
+        padding: 0 50px;
+    }
+    &__title {
+        position: relative;
+        padding-left: 25px;
+        font-weight: 700;
+        font-size: 14px;
+        @include before_circle;
+        &:before {
+            top: 13%;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    &__numb {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: end;
+        padding-right: 22px;
+    }
+    &__columns {
+        display: grid;
+        grid-template: 20px 21px/220px 130px;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    &__text {
+        width: 350px;
+        padding-left: 25px;
+    }
+}

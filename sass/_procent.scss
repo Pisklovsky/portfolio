@@ -1,0 +1,38 @@
+.procent {
+    padding-bottom: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        row-gap: 45px;
+        column-gap: 38px;
+    }
+    &__title {
+        position: relative;
+        padding-left: 13px;
+        font-weight: 700;
+        font-size: 14px;
+        @include before_circle;
+        &:before {
+            top: -35%;
+        }
+    }
+    &__columns {
+        display: grid;
+        grid-template: 21px 14px/200px 35px;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    &__divider {
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        span {
+            display: block;
+            height: 100%;
+            background-color: #ffa501;
+            border-radius: 4px;
+        }
+    }
+}

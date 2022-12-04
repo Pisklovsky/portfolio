@@ -1,0 +1,31 @@
+.promo {
+    position: relative;
+    padding: 206px 0 362px;
+    background: url('../img/bg1.jpg') center center / cover no-repeat;
+    color: #fff;
+    &__text {
+        position: relative;
+        font-size: 16px;
+        font-weight: 700;
+        @include before_circle;
+        padding-left: 10px;
+        z-index: 2;
+    }
+    &__title {
+        font-size: 48px;
+        text-align: left;
+        max-width: 532px;
+        line-height: 60px;
+        margin-top: 9px;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+    &__link {
+        margin-right: 44px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
